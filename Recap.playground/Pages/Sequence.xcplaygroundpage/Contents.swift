@@ -27,9 +27,17 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 500, height: 400)
 
-// Replace this comment and add your code below 
+// Draw a circle
+canvas.fillColor = Color.red
+canvas.drawShapesWithBorders = false
+canvas.drawEllipse(centreX: 100, centreY: 150, width: 150, height: 150)
 
+// draw rectangle
+canvas.fillColor = Color.blue
+canvas.drawRectangle(bottomLeftX: 135, bottomLeftY: 35, width: 125, height: 250)
 
+//draw square
+canvas.drawRectangle(bottomLeftX: 150, bottomLeftY: 75, width: 125, height: 125)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
