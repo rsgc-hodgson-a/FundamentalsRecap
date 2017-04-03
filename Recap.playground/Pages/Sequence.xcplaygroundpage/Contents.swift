@@ -37,7 +37,8 @@ canvas.fillColor = Color.blue
 canvas.drawRectangle(bottomLeftX: 135, bottomLeftY: 35, width: 125, height: 250)
 
 //draw square
-canvas.drawRectangle(bottomLeftX: 150, bottomLeftY: 75, width: 125, height: 125)
+canvas.fillColor = Color.yellow
+canvas.drawRectangle(bottomLeftX: 220, bottomLeftY: 100, width: 125, height: 125)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
