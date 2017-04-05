@@ -84,6 +84,73 @@ for x in stride(from: 0, through: 500, by: 64){
     canvas.drawLine(fromX: x-24, fromY: 55+y, toX: x-24, toY: 90+y)
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+//flipped twisty line
+for y in stride(from: 0, through: 500, by: 220){
+    
+    
+    // circle loop lower
+    for x in stride(from: 0, through: 500, by: 64){
+        
+        canvas.fillColor=Color.red
+        canvas.drawEllipse(centreX: x, centreY: 175+y, width: 56, height: 56)
+        
+        canvas.fillColor=Color.blue
+        canvas.drawEllipse(centreX: x, centreY: 175+y, width: 40, height: 40)
+        
+        canvas.fillColor=Color.black
+        canvas.drawEllipse(centreX: x, centreY: 175+y, width: 24, height: 24)
+        
+        canvas.fillColor=Color.white
+        canvas.drawEllipse(centreX: x, centreY: 175+y, width: 8, height: 8)
+    }
+    
+    // circle loop upper
+    for x in stride(from: 32, through: 500, by: 64){
+        
+        canvas.fillColor=Color.black
+        canvas.drawEllipse(centreX: x, centreY: 220+y, width: 56, height: 56)
+        
+        canvas.fillColor=Color.blue
+        canvas.drawEllipse(centreX: x, centreY: 220+y, width: 40, height: 40)
+        
+        canvas.fillColor=Color.red
+        canvas.drawEllipse(centreX: x, centreY: 220+y, width: 24, height: 24)
+        
+        canvas.fillColor=Color.white
+        canvas.drawEllipse(centreX: x, centreY: 220+y, width: 8, height: 8)
+    }
+    //Line loop
+    for x in stride(from: 0, through: 500, by: 64){
+        canvas.lineColor=Color.white
+        canvas.drawLine(fromX: x, fromY: 55+y, toX: x, toY: 100+y)
+        canvas.drawLine(fromX: x+32, fromY: 55+y, toX: x+32, toY: 90+y)
+        
+        
+        canvas.lineColor=Color.black
+        canvas.drawLine(fromX: x+8, fromY: 55+y, toX: x+8, toY: 90+y)
+        canvas.drawLine(fromX: x-8, fromY: 55+y, toX: x-8, toY: 90+y)
+        
+        canvas.lineColor=Color.blue
+        canvas.drawLine(fromX: x+16, fromY: 55+y, toX: x+16, toY: 90+y)
+        canvas.drawLine(fromX: x-16, fromY: 55+y, toX: x-16, toY: 90+y)
+        
+        canvas.lineColor=Color.red
+        canvas.drawLine(fromX: x+24, fromY: 55+y, toX: x+24, toY: 90+y)
+        canvas.drawLine(fromX: x-24, fromY: 55+y, toX: x-24, toY: 90+y)
+        
+    }
+    
 }
 
 
